@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Airbnb</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Boldonse&family=Cardo:ital,wght@0,400;0,700;1,400&family=DM+Serif+Text:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Myeongjo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Suez+One&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="header-logo">
+                    <img src="./images.png">
+                    <a href="#">airbnb</a>
+                </div>
+
+                <div class="search-container">
+                    <input class="js-input" type="search" placeholder="search here...">
+                    <svg xmlns="http://www.w3.org/2000/svg" onclick="getValue()" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fe004f" stroke-linecap="round" stroke-linejoin="round" d="m21 21l-4.343-4.343m0 0A8 8 0 1 0 5.343 5.343a8 8 0 0 0 11.314 11.314" stroke-width="1"/></svg>
+                </div>
+
+                <div class="credential-details">
+                   <button class="btn">Become a host</button>
+                   <button class="btn1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20"><path fill="#000" d="M10 20a10 10 0 1 1 0-20a10 10 0 0 1 0 20m7.75-8a8 8 0 0 0 0-4h-3.82a29 29 0 0 1 0 4zm-.82 2h-3.22a14.4 14.4 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14m-8.85-2h3.84a24.6 24.6 0 0 0 0-4H8.08a24.6 24.6 0 0 0 0 4m.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4zm-6.08-2h3.82a29 29 0 0 1 0-4H2.25a8 8 0 0 0 0 4m.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6M3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6"/></svg></button>
+                   <button class="btn2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M7.95 11.95h32m-32 12h32m-32 12h32"/></svg></button>          
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="body-container">
+                <h2 class="body-heading">Explore nearby</h2>
+
+                <div class="body-contents">
+                    <div class="body-content1">
+                        <div class="content1images">
+                            <img src="./images/san-francisco.jpg">
+                            <p><span>San Francisco</span><br>45 minutes drive</p>
+                            
+                        </div>
+                        <div class="content1images">
+                            <img src="./images/mammoth.jpg">
+                            <p><span>Mammoth Lakes</span><br>6.5 hours drive</p>                 
+                        </div>
+                    </div>
+                    <div class="body-content1">
+                        <div class="content1images">
+                            <img src="./images/san jose.jpeg">
+                            <p><span>San Jose</span><br>1.5 hours drive</p>
+                        </div>
+                        <div class="content1images">
+                            <img src="./images/sacram.jpeg">
+                            <p><span>Sacramento</span><br>1.5 hours drive</p>
+                        </div>
+                    </div>
+                    <div class="body-content1">
+                        <div class="content1images">
+                            <img src="./images/oakland.jpeg">
+                            <p><span>Oakland</span><br>30 minutes drive</p>
+                        </div>
+                        <div class="content1images">
+                            <img src="./images/south.jpg">
+                            <p><span>South Lake Tohoe</span><br>4 hours drive</p>         
+                        </div>
+                    </div>
+                    <div class="body-content1">
+                        <div class="content1images">
+                            <img src="./images/santa.jpeg">
+                            <p><span>Santa Barbara</span><br>7 hours drive</p>
+                        </div>
+                        <div class="content1images">
+                            <img src="./images/berke.jpeg" alt="Berkeley">
+                            <p><span>Berkeley</span><br>30 minutes drive</p>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="body-images">
+                <div class="body-header">
+                    <h3>Popular homes in London <span>&gt;</span></h3>
+                    <div class="button-container">
+                        <button class="prev-button">&lt;</button>
+                        <button class="next-button">&gt;</button>
+                    </div>
+                </div>
+                <div class="carousel-body">
+                    <ul class="carousel-list">
+                        <li class="carousel-container">
+                            <a href="#" class="card-items">
+                                <img src="./images/london.jpg">
+                                <p>Room in stockweel<br>
+                                    Gardens Estate
+                                </p>
+                                <span>$104 for two nights &starf; 4.97</span>
+                            </a>
+                        </li>
+
+                        <li class="carousel-container">
+                            <a href="#" class="card-items">
+                                <img src="./images/greater-manch.jpg">
+                                <p>Room in London</p>
+                                <span>$82 for two nights &starf; 4.76</span>
+                            </a>
+                        </li>
+                        <li class="carousel-container">
+                            <a href="#" class="card-items">
+                                <img src="./images/polar.jpeg">
+                                <p>Room in Poplar</p>
+                                <span>$194 for two nights &starf; 4.92</span>
+                            </a>
+                        </li>
+                        <li class="carousel-container">
+                            <a href="#" class="card-items">
+                                <img src="./images/poplar-img.jpeg">
+                                <p>Room in Twichkeham</p>
+                                <span>$95 for two nights &starf; 4.79</span>
+                            </a>
+                        </li>
+                        <li class="carousel-container">
+                            <a href="#" class="card-items">
+                                <img src="./images/north.jpeg">
+                                <p>Room in London</p>
+                                <span>$147 for two nights &starf; 5.0</span>
+                            </a>
+                        </li>
+                        <li class="carousel-container">
+                            <a href="#" class="card-items">
+                                <img src="./images/london2.jpeg">
+                                <p>Room in London</p>
+                                <span>$217 for two nights &starf; 5.0</span>
+                            </a>
+                        </li>
+                        <li class="carousel-container">
+                            <a href="#" class="card-items">
+                                <img src="./images/london3.jpeg">
+                                <p>Room in London</p>
+                                <span>$173 for two nights &starf; 4.97</span>
+                            </a>
+                        </li>
+                        <li class="carousel-container">
+                            <a href="#" class="card-items">
+                                <img src="./images/london4.jpeg">
+                                <p>Room in London</p>
+                                <span>$200 for two nights &starf; 4.98</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="carousel-body-container">
+                    <div class="carousel-header-items">
+                        <h3>Available next month in Cape Town<span>&gt;</span></h3>
+                        <div class="button-container">
+                            <button class="previous-button">&lt;</button>
+                            <button class="nexts-button">&gt;</button>
+                        </div>
+                        
+                    </div>
+                    <ul class="track-container">
+                        <li class="track-list-items">
+                            <a href="#" class="track-items">
+                                <img src="./images/capetown0.jpeg">
+                                <p>Apartment in Cliftorn </p>
+                                <span>$519 for two nights &starf; 4.97</span>
+                            </a>
+                        </li>
+                        <li class="track-list-items">
+                            <a href="#" class="track-items">
+                                <img src="./images/capetown1.jpeg">
+                                <p>Apartment in Green point</p>
+                                <span>$218 for two nights &starf; 4.96</span>
+                            </a>
+                        </li>
+                        <li class="track-list-items">
+                            <a href="#" class="track-items">
+                                <img src="./images/capetown2.jpeg">
+                                <p>Apartment in Sea point </p>
+                                <span>$86 for two nights &starf; 4.9</span>
+                            </a>
+                        </li>
+                        <li class="track-list-items">
+                            <a href="#" class="track-items">
+                                <img src="./images/capetown3.jpeg">
+                                <p>Apartment in Green point</p>
+                                <span>$153 for two nights &starf; 4.88</span>
+                            </a>
+                        </li>
+                        <li class="track-list-items">
+                            <a href="#" class="track-items">
+                                <img src="./images/capetown4.jpeg">
+                                <p>Loft in cape Town City</p>
+                                <span>$185 for two nights &starf; 4.87</span>
+                            </a>
+                        </li>
+                        <li class="track-list-items">
+                            <a href="#" class="track-items">
+                                <img src="./images/capetown6.jpeg">
+                                <p>Apartment in Seaport,<br>Cape Town</p>
+                                <span>$86 for two nights &starf; 4.86</span>
+                            </a>
+                        </li>
+                        <li class="track-list-items">
+                            <a href="#" class="track-items">
+                                <img src="./images/capetown5.jpeg">
+                                <p>Apartment in Seaport,<br>Cape Town</p>
+                                <span>$86 for two nights &starf; 4.86</span>
+                            </a>
+                        </li>
+                         <li class="track-list-items">
+                            <a href="#" class="track-items">
+                                <img src="./images/london.jpg">
+                                <p>Apartment in Seaport,<br>Cape Town</p>
+                                <span>$86 for two nights &starf; 4.86</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                
+                    
+    
+
+            </div>
+        </section>
+    </body>
+    <script src="./mains.js">
+
+    </script>
+</html>
